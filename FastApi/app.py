@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS  # ← Importa o módulo
+import os
 
 from gera_analise_gemini import gerar_avaliacao_reforma  # ← Importa a classe GeraAnaliseGemini
 
@@ -39,4 +40,5 @@ def upload_json():
         }), 400
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=3375)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
