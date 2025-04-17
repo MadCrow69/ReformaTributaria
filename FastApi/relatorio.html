@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Relatório de Impacto da LC 214/2023 - Forbiz Soluções Ltda</title>
+    <title>Relatório de Impacto da Reforma Tributária - Forbiz Soluções Ltda</title>
     <style>
         body {
             font-family: sans-serif;
@@ -15,20 +15,24 @@
             color: #007bff; /* Azul Forbiz */
         }
         section {
-            margin-bottom: 30px;
-            padding: 20px;
+            margin-bottom: 20px;
+            padding: 15px;
             border: 1px solid #ddd;
             border-radius: 5px;
         }
-        .section-title {
+        .empresa-info {
             display: flex;
-            align-items: center;
-            margin-bottom: 10px;
+            flex-wrap: wrap;
+            gap: 10px;
         }
-        .section-title i {
-            font-size: 2em;
-            margin-right: 10px;
-            color: #007bff;
+        .empresa-info > div {
+            width: 50%;
+            box-sizing: border-box; /* Inclui padding e border na largura */
+        }
+        @media (max-width: 600px) {
+            .empresa-info > div {
+                width: 100%;
+            }
         }
         table {
             width: 100%;
@@ -43,56 +47,59 @@
         th {
             background-color: #f2f2f2;
         }
-        .highlight {
-            background-color: #f8f9fa;
+        .destaque {
+            background-color: #f7f7f7;
             padding: 10px;
             border-radius: 5px;
+            margin-bottom: 10px;
         }
-        @media (max-width: 768px) {
-            .section-title {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            .section-title i {
-                margin-bottom: 5px;
-            }
+        .warning {
+            color: #dc3545; /* Vermelho */
         }
     </style>
 </head>
 <body>
 
-    <h1>Relatório de Impacto da LC 214/2023</h1>
-    <h2>Forbiz Soluções Ltda</h2>
+    <h1>Relatório de Impacto da Reforma Tributária - Lei Complementar 214/2023</h1>
 
-    <section>
-        <h3>👤 Dados da Empresa</h3>
-        <p><strong>Razão Social:</strong> Forbiz Soluções Ltda</p>
-        <p><strong>CNPJ:</strong> 12.345.678/0001-90</p>
-        <p><strong>Setor:</strong> Comércio</p>
-        <p><strong>Localização:</strong> São Paulo - SP</p>
-        <p><strong>Contato:</strong> Carlos Silva - carlos@forbiz.com.br - (11) 91234-5678</p>
+    <section class="empresa-info">
+        <div>
+            <h2>👤 Dados da Empresa</h2>
+            <p><strong>Razão Social:</strong> Forbiz Soluções Ltda</p>
+            <p><strong>CNPJ:</strong> 12.345.678/0001-90</p>
+            <p><strong>Setor:</strong> Comércio</p>
+            <p><strong>Localização:</strong> São Paulo - SP</p>
+        </div>
+        <div>
+            <p><strong>Contato:</strong></p>
+            <p><strong>Responsável:</strong> Carlos Silva</p>
+            <p><strong>Email:</strong> carlos@forbiz.com.br</p>
+            <p><strong>Telefone:</strong> (11) 91234-5678</p>
+            <p><strong>Website:</strong> <a href="https://www.forbiz.com.br">https://www.forbiz.com.br</a></p>
+        </div>
     </section>
 
 
     <section>
-        <h3>📊 Diagnóstico Tributário</h3>
+        <h2>📊 Diagnóstico Tributário</h2>
 
-        <h4>1. Panorama Geral da Reforma</h4>
-        <p>A Lei Complementar nº 214/2023 institui o Imposto sobre Bens e Serviços (IBS) e o Imposto sobre Bens e Serviços (CBS), substituindo diversos impostos atuais. O IBS será um imposto federal, com alíquota de 19,2%, enquanto o CBS será um imposto estadual, com alíquota de 9,6%.  Além disso, a reforma prevê a criação de um Imposto Seletivo (IS) para certos produtos.</p>
+        <h3>1. Panorama Geral da Reforma</h3>
+        <p>A Lei Complementar 214/2023 institui o Imposto sobre Bens e Serviços (IBS) e o Imposto sobre Operações de Crédito, Câmbio e Seguro, ou relativas a títulos ou valores mobiliários (IOF), substituindo diversos impostos existentes.  O Imposto Seletivo (IS) será aplicado sobre determinados produtos e serviços.</p>
 
-        <h4>2. Impactos Específicos para a Forbiz Soluções Ltda</h4>
-        <p>Considerando o faturamento da Forbiz (R$ 4,8 mi a R$ 78 mi) e o seu enquadramento no Simples Nacional, a transição para o novo sistema demandará análise detalhada.  A alíquota do IBS será de 19,2%, e a do CBS, de 9,6%. Uma simulação precisa da nova carga tributária requer análise detalhada de cada NCM e eventuais isenções ou benefícios.</p>
-        <p><strong>Simulação (estimada e preliminar):</strong>  Devido à complexidade e à necessidade de análise detalhada dos NCMs, uma simulação precisa só será possível após análise completa.  No entanto, é esperado um impacto significativo na carga tributária, dependendo da incidência do Imposto Seletivo.</p>
+        <h3>2. Impactos Específicos para a Forbiz Soluções Ltda</h3>
+        <p>Considerando o faturamento da Forbiz e a ausência de operações em outros estados, a transição para o novo sistema tributário exigirá uma análise detalhada dos seus produtos e a adaptação ao IBS (19,2%) e, potencialmente, ao Imposto Seletivo.  A alíquota de CBS (9,6%)  deve ser considerada na simulação de carga tributária. </p>
+        <div class="destaque">
+            <p><strong>Simulação (estimativa):</strong> Uma simulação completa requer dados financeiros mais detalhados.  Entretanto, como ponto de partida, considerando a carga tributária atual e a projeção de IBS, uma revisão de preços se torna necessária para manter a margem de lucro da empresa.</p>
+        </div>
 
-        <h4>3. Situação Atual (Simples Nacional)</h4>
-        <p>Atualmente, a Forbiz opera sob o regime do Simples Nacional. As principais obrigações incluem o pagamento do DAS (Documento de Arrecadação do Simples Nacional),  declarações anuais e outras obrigações acessórias.</p>
+        <h3>3. Situação Atual (Simples Nacional)</h3>
+        <p>Atualmente a Forbiz opera no Simples Nacional.  As principais obrigações incluem o pagamento mensal do DAS (Documento de Arrecadação do Simples Nacional) e a manutenção da escrituração contábil.</p>
 
-        <h4>4. Situação Futura</h4>
-        <p>Após a implementação da reforma, a Forbiz poderá optar por permanecer no Simples Nacional (se atender aos requisitos atualizados) ou migrar para o regime geral de tributação. A escolha dependerá de uma análise custo-benefício detalhada, considerando a nova estrutura tributária e a complexidade de cada regime.</p>
+        <h3>4. Situação Futura</h3>
+        <p>Considerando o faturamento, é provável que a Forbiz migre para o regime geral de tributação após o período de transição. Isso implicará em mudanças na escrituração contábil e na apuração de impostos (IBS, IOF e, potencialmente, IS).</p>
 
-
-        <h4>5. Produtos e NCMs — Alerta para o Imposto Seletivo (IS)</h4>
-        <p>É crucial verificar se os NCMs dos produtos da Forbiz estão sujeitos ao Imposto Seletivo (IS).  Após analisar os anexos da LC 214/2023, verificaremos a possível incidência do IS nos seguintes produtos:</p>
+        <h3>5. Produtos e NCMs — Alerta para o Imposto Seletivo (IS)</h3>
+        <p>É crucial verificar se os NCMs dos produtos da Forbiz estão sujeitos ao Imposto Seletivo.  Recomendamos uma análise minuciosa dos anexos da LC 214/2023.</p>
         <table>
             <thead>
                 <tr>
@@ -105,44 +112,42 @@
                 <tr>
                     <td>8501.10.19</td>
                     <td>Motor elétrico</td>
-                    <td>A ser analisado</td>
+                    <td><span class="warning">Necessário verificar anexos da LC 214/2023</span></td>
                 </tr>
                 <tr>
                     <td>8414.59.90</td>
                     <td>Compressor de ar</td>
-                    <td>A ser analisado</td>
+                    <td><span class="warning">Necessário verificar anexos da LC 214/2023</span></td>
                 </tr>
                 <tr>
                     <td>8471.30.12</td>
                     <td>Impressora térmica</td>
-                    <td>A ser analisado</td>
+                    <td><span class="warning">Necessário verificar anexos da LC 214/2023</span></td>
                 </tr>
                 <tr>
                     <td>8536.69.10</td>
                     <td>Tomada elétrica</td>
-                    <td>A ser analisado</td>
+                    <td><span class="warning">Necessário verificar anexos da LC 214/2023</span></td>
                 </tr>
                 <tr>
                     <td>8544.42.00</td>
                     <td>Cabo de energia</td>
-                    <td>A ser analisado</td>
+                    <td><span class="warning">Necessário verificar anexos da LC 214/2023</span></td>
                 </tr>
             </tbody>
         </table>
-        <p><i>Observação: Esta análise de potencial incidência de IS é preliminar e requer verificação detalhada nos anexos da LC 214/2023.</i></p>
 
+        <h3>6. Riscos e Oportunidades</h3>
+        <p>A extinção de benefícios fiscais atuais representa um risco, mas o aproveitamento de créditos de PIS/COFINS,  possíveis isenções e a renegociação de contratos podem gerar oportunidades. Uma análise cuidadosa de todos os contratos é recomendada.</p>
 
-        <h4>6. Riscos e Oportunidades</h4>
-        <p>A reforma apresenta riscos e oportunidades.  A extinção de benefícios fiscais atuais representa um risco. No entanto, a possibilidade de aproveitamento de créditos de PIS/COFINS, e eventuais isenções, representam oportunidades. A revisão de contratos com fornecedores e clientes também se faz necessária.</p>
+        <h3>7. Recomendações Estratégicas</h3>
+        <p>Para uma transição suave, recomenda-se a utilização plena do ERP SENIOR SISTEMAS, atualizado para atender às novas legislações.  Ajuste de preços, reprecificação estratégica e análises de impacto nos contratos devem ser realizadas com urgência. A equipe da Forbiz, já preparada, deve focar na adaptação dos processos internos.</p>
 
-        <h4>7. Recomendações Estratégicas</h4>
-        <p>Recomendamos a utilização plena das funcionalidades do ERP SENIOR SISTEMAS para otimizar a gestão tributária, incluindo a simulação de cenários tributários com base nas novas regras, o acompanhamento da legislação e a automatização de processos.  A reprecificação dos produtos e a revisão de contratos com clientes e fornecedores também são cruciais para mitigar o impacto da nova legislação.</p>
+        <h3>8. Linha do Tempo – Implementação</h3>
+        <p>Um cronograma detalhado de implementação deve ser elaborado com base na LC 214/2023 e no calendário de transição definido pelo Governo. O prazo exato depende da complexidade da adaptação e recursos disponíveis.</p>
 
-        <h4>8. Linha do Tempo – Implementação</h4>
-        <p>Um cronograma detalhado de implementação será elaborado após análise completa da situação da Forbiz.  Este cronograma incluirá etapas como: análise da legislação, simulação de impacto tributário, ajustes no ERP SENIOR SISTEMAS, reprecificação de produtos e adequação de processos internos.</p>
-
-        <h4>9. Conclusão</h4>
-        <p>A LC 214/2023 trará mudanças significativas para a Forbiz.  Uma análise aprofundada, com auxílio do nosso time de especialistas e do ERP SENIOR SISTEMAS, é fundamental para garantir a adequada adaptação e a mitigação de riscos, aproveitando ao máximo as oportunidades oferecidas pela nova legislação.</p>
+        <h3>9. Conclusão</h3>
+        <p>A reforma tributária trará mudanças significativas para a Forbiz. A  adequação ao IBS,  a  possível incidência do IS e a migração para o regime geral de tributação exigem planejamento estratégico e acompanhamento técnico especializado. A utilização do ERP SENIOR SISTEMAS, aliado à nossa consultoria, garante uma transição mais eficiente e segura.</p>
     </section>
 
 </body>

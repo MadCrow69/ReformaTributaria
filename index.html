@@ -178,10 +178,10 @@
   <script>
     const form = document.getElementById('diagnosticoForm');
     const responseMsg = document.getElementById('responseMsg');
-
+  
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
-
+  
       const data = {
         empresa: {
           razao_social: form.razao_social.value,
@@ -223,17 +223,19 @@
           quer_relatorio: form.relatorio.value
         }
       };
-
+  
       try {
         const res = await fetch('http://201.11.9.158:3375/reformatributaria', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(data)
         });
-
+  
         if (res.ok) {
-          responseMsg.innerHTML = '<p class="success">✅ Diagnóstico enviado com sucesso!</p>';
-          form.reset();
+          responseMsg.innerHTML = '<p class="success">✅ Diagnóstico enviado com sucesso! Redirecionando para o relatório...</p>';
+          setTimeout(() => {
+            window.location.href = 'http://201.11.9.158:3375/relatorio';
+          }, 2000);
         } else {
           throw new Error('Erro ao enviar');
         }
@@ -241,6 +243,6 @@
         responseMsg.innerHTML = '<p class="error">❌ Ocorreu um erro no envio. Tente novamente.</p>';
       }
     });
-  </script>
+  </script>  
 </body>
 </html>
