@@ -1,0 +1,3 @@
+google_api_key = "AIzaSyAHmqbe0yzpeJwIvXJ06saREEyrQBUOYOY"
+openai_api_key = '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'
+softdesk_hash_api: "F0rb1zIntegraca0Entr3S1st3mas"

@@ -1,0 +1,56 @@
+{
+    "empresa": {
+        "razao_social": "Forbiz Soluções Ltda",
+        "cnpj": "12.345.678/0001-90",
+        "website": "https://www.forbiz.com.br",
+        "cidade_estado": "São Paulo - SP",
+        "responsavel": "Carlos Silva",
+        "email": "carlos@forbiz.com.br",
+        "telefone": "(11) 91234-5678"
+    },
+    "estrutura_fiscal": {
+        "setor": "Comércio",
+        "regime_tributario": "Simples Nacional",
+        "faturamento": "R$ 4,8 mi a R$ 78 mi",
+        "opera_em_outros_estados": "Não",
+        "tem_regimes_especiais": "Sim",
+        "tem_produtos_isencao": "Não"
+    },
+    "operacoes_riscos": {
+        "estudo_cbs_ibs": "Sim",
+        "utiliza_creditos_pis_cofins": "Sim",
+        "clausulas_revisao": "Não",
+        "ncms": [
+            {
+                "codigo": "8501.10.19",
+                "produto": "Motor elétrico"
+            },
+            {
+                "codigo": "8414.59.90",
+                "produto": "Compressor de ar"
+            },
+            {
+                "codigo": "8471.30.12",
+                "produto": "Impressora térmica"
+            },
+            {
+                "codigo": "8536.69.10",
+                "produto": "Tomada elétrica"
+            },
+            {
+                "codigo": "8544.42.00",
+                "produto": "Cabo de energia"
+            }
+        ],
+        "avaliacao_carga": "Muito elevada (acima de 20%)",
+        "tipo_contabilidade": "Terceiriza"
+    },
+    "obrigacoes_tecnologia": {
+        "equipe_preparada": "Sim",
+        "erp": "SENIOR SISTEMAS",
+        "atualizacao_sistema": "Sim",
+        "apuracao_tributos": "Semiautomática",
+        "historico_creditos": "Sim",
+        "quer_relatorio": "Sim, quero receber"
+    }
+}
